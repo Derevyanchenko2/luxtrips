@@ -3,14 +3,37 @@
     margin-bottom: 100px;
 }
 .contact-container{
-    max-width: 950px;
+    max-width: 920px;
     margin: 0 auto;
-    padding: 0 15px;
-    padding: 90px 259px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    border: 1px solid #fff;
     border-radius: 10px;
-    border: 1px solid #FFF;
-    background: rgba(226, 211, 206, 0.20);
-    backdrop-filter: blur(4.5px);
+    background-color: rgba(226, 211, 206, .2);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+}
+.contact-container:after,.contact-container:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    left: 10px;
+    height: 7px;
+    border: 1px solid #fff;
+    pointer-events: none;
+    z-index: -1
+}
+
+.contact-container:before {
+    top: -7px;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0
+}
+
+.contact-container:after {
+    bottom: -9px;
+    border-top: none;
+    border-radius: 0 0 10px 10px
 }
 .contact-wrapper {
     display: flex;
@@ -45,10 +68,60 @@
 .input-first{
     margin-bottom: 15px;
 }
-.contact-form__btn {
+
+.contact-btn {
     margin-top: 53px;
-    padding: 14px 90px;
-    color: #FFF;
-    border-radius: 74px;
-    background: var(--Style, #0C0B10);
+    position: relative;
+    height: 55px;
+    padding: 5px 24px 4px;
+    border-radius: 50px;
+    background-color: #0c0b10;
+    color: #fff;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    transition: background-color .3s, color .3s;
 }
+
+.contact-btn:before,
+.contact-btn:after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    bottom: 0;
+    width: calc(50% - 53px);
+    border: 1px solid #0c0b10;
+    pointer-events: none;
+    transition: border-color .3s;
+}
+
+.contact-btn:before {
+    left: 8px;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+}
+
+.contact-btn:after {
+    right: 8px;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+}
+
+.contact-btn svg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.contact-btn svg:first-child {
+    bottom: calc(100% - -6px);
+}
+
+.contact-btn svg:last-child {
+    top: calc(100% - -3px);
+}
+
