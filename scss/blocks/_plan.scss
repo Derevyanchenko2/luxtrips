@@ -1,0 +1,43 @@
+.plan{
+    position: relative;
+}
+
+.plan-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 796px;
+}
+.plan-decor__sky{
+    position: absolute;
+    &--right{
+        right: 0;
+    }
+    &--left{
+        left: 0;
+        bottom: -150px;
+        z-index: -3;
+    }
+}
+.plan-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.plan-content__title {
+    margin-bottom: 35px;
+}
+.plan-btn {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.624428px solid #0c0b10;
+    border-radius: 61.3171px;
+    min-height: 38px;
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,136 @@
+
+.rated{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+}
+.rated-title{
+    text-align: center;
+}
+
+.rated-tab {
+    animation: fadeEffect 1s; 
+  }
+    @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+.rated-tabs {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    li:not(:last-child){
+        margin-right: 37px;
+    }
+    a {
+        cursor: pointer;
+        color: var(--79655-e, #79655E);
+        font-family: Forum;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%; 
+        transition: 0.4s;
+        &.active {
+            color: var(--Style, #0C0B10);          
+        }
+    }    
+    .rated-tab {
+        padding-top: 160px;
+        transition: opacity 0.5s ease-in-out;
+    }
+}
+  .tab-link {
+    position: relative;
+  }
+  .tab-link.active::before {
+    content: url('../images/rated-img/decor-icn.svg');
+    position: absolute;
+    bottom: -17px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+  
+
+.rated-swiper{
+    position: relative;
+    overflow: visible;
+}
+.rated-swiper__wrapper {
+    // overflow: visible;
+    display: flex;
+}
+.rated-slide{
+    max-width: 350px;
+    width: 100%;
+}
+.rated-slide-img {
+    position: relative;
+    img{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #0B2034 100%);
+    }
+}
+.rated-slide-content {
+    position: absolute;
+    padding: 10px 50px 30px 30px;
+    bottom: 0;
+}
+.rated-slide-content__location {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.rated-slide-content__title {
+    color: #FFF;
+    font-family: Forum;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%; 
+}
+.rated-slide-content__price {
+    margin-top: 30px;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    span{
+        color: #FFF;
+    font-family: Forum;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%; 
+    }
+}
+.rated-rating__number {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.rated-rating {
+    position: absolute;
+    right: 36px;
+    bottom: 40px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+.rated-slider-btn{
+    position: absolute;
+    right: 100px;
+    top: 430px;
+}

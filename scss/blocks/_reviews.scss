@@ -1,0 +1,114 @@
+.reviews {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.reviews-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.reviews-heading {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 70px;
+
+}
+.reviews-wrapper{
+    position: relative;
+}
+.reviews-swiper {
+    width: 100%;
+    overflow: visible; 
+}
+
+.reviews-row {
+    display: flex;
+    padding: 0 15px;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+}
+
+.reviews-slide {
+    position: relative;
+    z-index: 1;
+    max-width: 635px; 
+    width: 100%;
+    max-height: 635px; // Set height to 600px
+}
+
+.reviews-item {
+    padding: 65px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: rgba(226, 211, 206, 0.20);
+    backdrop-filter: blur(10px);
+    max-width: 636px;
+    width: 100%;
+}
+.reviews-item__person {
+    margin-bottom: 57px;
+}
+.reviews-item__text {
+    max-width: 481px;
+    font-family: Manrope;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 37px;
+    color: #1d1a1a;
+    margin-bottom: 80px;
+}
+.reviews-item__names {
+   color: #1D1A1A;
+    font-family: Manrope;
+    font-size: 19.545px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 94.5%; 
+    span{
+        margin-top: 6px;
+        display: block;
+        font-size: 16.753px;
+    }
+}
+.reviews-slider-btn{
+    position: absolute;
+    right: 100px;
+    bottom: 240px;
+}
+.custom-pagination{
+    margin-top: 47px;
+    display: flex;
+    justify-content: center;
+    // height: 1px;
+}
+
+.custom-pagination span{
+    width: 100px;
+    height: 3px;
+    border: 1px solid #FFF;
+    background: #FFF;
+}
+
+.custom-pagination span:not(:last-child) {
+    margin-right: 16px;
+}
+.swiper-pagination-bullet{
+    width: 100px;
+    height: 3px;
+    margin: 0 16px;  // Регулируйте отступы между элементами
+    background-color: #fff;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #79655e;  // Цвет для активного элемента
+}
