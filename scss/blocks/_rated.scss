@@ -61,7 +61,7 @@
     position: relative;
   }
   .tab-link.active::before {
-    content: url('../images/rated-img/decor-icn.svg');
+    content: url('./images/rated-img/decor-icn.svg');
     position: absolute;
     bottom: -17px; 
     left: 50%; 

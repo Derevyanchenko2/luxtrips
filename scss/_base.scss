@@ -215,7 +215,7 @@ button,a{
         width: 86px;
         height: 162px;
         transform: translate(-50%, -50%);
-        background: url(../images/rated-img/title-bg-decor.svg) center no-repeat;
+        background: url(./images/rated-img/title-bg-decor.svg) center no-repeat;
         background-size: contain;
         pointer-events: none;
         z-index: -1;
@@ -275,7 +275,7 @@ button,a{
 		position: absolute;
 		width: 28px;
 		height: 14px;
-		background-image: url('../images/arrow-svg.svg');
+		background-image: url('./images/arrow-svg.svg');
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;

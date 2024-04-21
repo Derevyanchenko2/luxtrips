@@ -217,7 +217,7 @@ button, a {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: url(../images/rated-img/title-bg-decor.svg) center no-repeat;
+  background: url(./images/rated-img/title-bg-decor.svg) center no-repeat;
   background-size: contain;
   pointer-events: none;
   z-index: -1;
@@ -291,7 +291,7 @@ button, a {
   position: absolute;
   width: 28px;
   height: 14px;
-  background-image: url("../images/arrow-svg.svg");
+  background-image: url("./images/arrow-svg.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -628,7 +628,7 @@ button, a {
   }
 }
 .main-section {
-  background-image: url("../images/main-img/main-bg.png");
+  background-image: url("./images/main-img/main-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -927,7 +927,7 @@ button, a {
 }
 
 .tab-link.active::before {
-  content: url("../images/rated-img/decor-icn.svg");
+  content: url("./images/rated-img/decor-icn.svg");
   position: absolute;
   bottom: -17px;
   left: 50%;
@@ -1244,7 +1244,7 @@ button, a {
   left: 0;
   height: auto;
   padding-bottom: 68%;
-  background-image: url("../images/sect-book-img/bg.jpg");
+  background-image: url("./images/sect-book-img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   pointer-events: none;
@@ -1352,7 +1352,7 @@ button, a {
 .trips {
   padding: 100px 0;
   position: relative;
-  background-image: url(../images/trips-img/bg.png);
+  background-image: url(./images/trips-img/bg.png);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1741,7 +1741,7 @@ button, a {
 
 .inspiration-box {
   position: relative;
-  background-image: url(../images/inspiration-bg.png);
+  background-image: url(./images/inspiration-bg.png);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2229,7 +2229,7 @@ button, a {
   margin-top: -40px;
   padding-top: 108px;
   padding-bottom: 34px;
-  background-image: url(../images/footer-img/bg.png);
+  background-image: url(./images/footer-img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
