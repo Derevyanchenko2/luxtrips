@@ -55,11 +55,19 @@ body {
 	font-family: 'Manrope', sans-serif;	
     background-color: #e2d3ce;
 }
+button,a{
+	cursor: pointer;
+}
 .container{
 	max-width: 1140px;
 	padding: 0 15px;
 	margin-left: auto;
 	margin-right: auto;
+}
+.rated-container{
+	max-width: 1275px;
+	padding: 0 15px;
+	margin-left: auto;
 }
 @media (min-width: 576px) {
     .container{
@@ -84,11 +92,84 @@ body {
         max-width:1140px
     }
 }
-
+//====button components
 .btn{
 	cursor: pointer;
 }
+.btn-black{
+	background-color: #0c0b10;
+    color: #fff;
+	text-transform: uppercase;
+    transition: background-color .3s, color .3s;
+	&:hover{
+		transition: background-color .3s, color .3s;
+    	background-color: #fff;
+		span{
+			color: #0c0b10;
+			transition: background-color .3s, color .3s;
+		}
+	}
+}
+
+.custom-btn{
+	position: relative;
+}
+
+.custom-btn:before,
+.custom-btn:after {
+    content: "";
+    position: absolute;
+	z-index: -4;
+    top: -9px;
+    bottom: 0;
+    width: calc(50% - 80px);
+    border: 1px solid #0c0b10;
+    pointer-events: none;
+    transition: border-color .3s;
+}
+
+.custom-btn:before {
+    left: 30px;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+}
+
+.custom-btn:after {
+    right: 30px;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+}
+
+.custom-btn svg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.custom-btn svg:first-child {
+    bottom: calc(100% - -6px);
+}
+
+.custom-btn svg:last-child {
+    top: calc(100% - -3px);
+}
+
+
 .transparent-btn{
+	color: #0C0B10;
+	border: 0.624428px solid #0C0B10;
+	border-radius: 61.3171px;
+	font-family: 'Forum';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 	cursor: pointer;
 	transition: 0.3s all;
 	&:hover{
@@ -98,6 +179,32 @@ body {
 		background: #0C0B10;
 	}
 }
+// 
+// .scale-img{
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     transition: transform .4s;
+// }
+
+// .scale-img:hover {
+//     transition: transform .4s;
+//     transform: scale(1.1);
+// }
+.scale-img img{
+	display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s;
+}
+
+.scale-img:hover img{
+    transition: transform .4s;
+    transform: scale(1.1);
+}
+
+
 .title-decor{
     position: relative;
     &::before{

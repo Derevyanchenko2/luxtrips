@@ -1,7 +1,27 @@
 .book {
+    padding-top: 80px;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top: -533px;
+        width: 100%;
+        left: 0;
+        height: auto;
+        padding-bottom: 68%;
+        background-image: url('../images/sect-book-img/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        z-index: -1;
+    }
 }
 .book-title {
+    white-space: pre-line;
+    text-align: center;
     margin-bottom: 74px;
+    margin-bottom: 26px;
+    padding: 44px 0 48px;
 }
 
 .book-row {
@@ -18,20 +38,62 @@
 .book-column:not(:last-child){
     margin-bottom: 30px;
 }
-.book-column__img {
+.book-column__img{
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    max-width: 540px;
+    max-height: 192px;
+    object-fit: cover;
+    object-position: center;
 }
+
 .book-column__text {
     position: absolute;
     top: 50%;
     left: 50%;
+    white-space: pre-line;
     transform: translate(-50%, -50%);
-    color: var(--ffffff, #FFF);
-    text-align: center;
-    font-family: Forum;
-    font-size: 44px;
+    font-family: 'Forum';
     font-style: normal;
     font-weight: 400;
-    line-height: 98.5%; 
-    letter-spacing: 1.76px;
+    font-size: 44px;
+    line-height: 98.5%;
+    text-align: center;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
+    color: #FFFFFF;
 }
+.book-column__visual{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 141px;
+    height: 141px;
+    transform: translate(-50%, -50%) scaleY(.3);
+    pointer-events: none;
+    z-index: -1;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 141px;
+        height: 141px;
+        border: 1px solid #79655e;
+        transform: rotate(45deg) skew(20deg, 20deg);
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 127px;
+        height: 127px;
+        transform: rotate(45deg) skew(20deg, 20deg);
+        backdrop-filter: blur(20px);
+    }
+}
+
+

@@ -75,53 +75,9 @@
     height: 55px;
     padding: 5px 24px 4px;
     border-radius: 50px;
-    background-color: #0c0b10;
-    color: #fff;
     font-size: 24px;
     line-height: 26px;
     letter-spacing: .04em;
-    text-transform: uppercase;
-    transition: background-color .3s, color .3s;
-}
-
-.contact-btn:before,
-.contact-btn:after {
-    content: "";
-    position: absolute;
-    top: -9px;
-    bottom: 0;
-    width: calc(50% - 53px);
-    border: 1px solid #0c0b10;
-    pointer-events: none;
-    transition: border-color .3s;
-}
-
-.contact-btn:before {
-    left: 8px;
-    border-right: none;
-    border-radius: 50px 0 0 50px;
-}
-
-.contact-btn:after {
-    right: 8px;
-    border-left: none;
-    border-radius: 0 50px 50px 0;
-}
-
-.contact-btn svg {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 48px;
-    height: 20px;
-    pointer-events: none;
-}
-
-.contact-btn svg:first-child {
-    bottom: calc(100% - -6px);
-}
-
-.contact-btn svg:last-child {
-    top: calc(100% - -3px);
+    
 }
 
