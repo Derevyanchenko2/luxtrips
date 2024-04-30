@@ -1,6 +1,9 @@
 .inspiration {
     margin-top: -300px;
 }
+.PageLuxury .inspiration{
+    margin-top: 0;
+}
 .inspiration-box {
     position: relative;
     background-image: url(../images/inspiration-bg.png);
@@ -115,22 +118,6 @@
         line-height: 179.8%; 
     }
 }
-.inspiration-btn {
-    cursor: pointer;
-    min-height: 55px;
-    margin-left: -27%;
-    padding: 13px 108px;
-    border-radius: 74px;
-    background: var(--ffffff, #FFF);
-    span{
-        font-family: 'Forum';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 26px;
-        text-align: center;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #0C0B10;
-    }
+.btn-crown--inspiration{
+    margin-left: -87px;
 }

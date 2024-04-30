@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // tab
-  const tabsContainer = document.getElementById('technology-tabs');
-  const tabContents = document.querySelectorAll('.rated-tab');
+  const tabsContainer = document.getElementById('travels-tabs');
+  const tabContents = document.querySelectorAll('.travels-tab');
 
   tabsContainer.addEventListener('click', function (event) {
       event.preventDefault();
@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
   tabsContainer.querySelector('a').click();
 
   // slider
-  const swiper = new Swiper('.rated-swiper', {
-      loop: false,
+  const RatedSwiper = new Swiper('.travels-swiper', {
+    //   loop: true,
       slidesPerView: 3,
-      spaceBetween: 30,
+    //   spaceBetween: 30,
       navigation: {
-          nextEl: '.rated-slider-btn',
+          nextEl: '.travels-slider-btn',
       },
   });
 

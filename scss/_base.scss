@@ -92,6 +92,15 @@ button,a{
         max-width:1140px
     }
 }
+.main-screen-bg{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg_top_inner.png) center / cover no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+
 //====button components
 .btn{
 	cursor: pointer;
@@ -111,51 +120,104 @@ button,a{
 	}
 }
 
-.custom-btn{
-	position: relative;
+.btn-crown {
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    padding: 0 25px;
+    border-radius: 67px;
+    max-width: 540px;
+    transition: background-color .3s ease-out;
+    pointer-events: all;
 }
-
-.custom-btn:before,
-.custom-btn:after {
-    content: "";
-    position: absolute;
-	z-index: -4;
-    top: -9px;
-    bottom: 0;
-    width: calc(50% - 80px);
-    border: 1px solid #0c0b10;
-    pointer-events: none;
-    transition: border-color .3s;
+.btn-crown-contact {
+    margin-top: 53px;
+    margin-bottom: 22px;
+    background-color: #000;
 }
-
-.custom-btn:before {
-    left: 30px;
-    border-right: none;
-    border-radius: 50px 0 0 50px;
+.btn-crown__wrapper {
+    position: relative;
+    height: 100%;
+    padding: 15px 50px;
+    border-radius: 98px;
 }
-
-.custom-btn:after {
-    right: 30px;
-    border-left: none;
-    border-radius: 0 50px 50px 0;
+.btn-crown-contact .btn-crown__decor::before {
+    border-color: #000;
 }
+.btn-crown__decor{
+    &:before{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -10px;
+        width: 35%;
+        height: 50%;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        border-top-right-radius: 60px;
+        border-bottom: unset;
+        border-left: unset;
+        transition: border-color .3s ease-out;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -10px;
+        width: 35%;
+        height: 50%;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-top-left-radius: 60px;
+        border-right: unset;
+        border-bottom: unset;
+        transition: border-color .3s ease-out;
+    }
+}   
 
-.custom-btn svg {
+.btn-crown__decor span:first-child {
     position: absolute;
     left: 50%;
+    top: -25px;
     transform: translateX(-50%);
-    width: 48px;
+    display: block;
+    width: 50px;
     height: 20px;
-    pointer-events: none;
+    background: url(../images/btn-decor-top.svg) center / cover no-repeat;
+}
+.btn-crown__decor span:last-child {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    display: block;
+    width: 36px;
+    height: 15px;
+    background: url(../images/btn-decor-bottom.svg) center / cover no-repeat;
+}
+.btn-crown__decor--white span:first-child{
+    background: url(../images/decor-btn-wht-top.svg) center / cover no-repeat;
+}
+.btn-crown__decor--white span:last-child{
+    background: url(../images/decor-btn-wht-bottom.svg) center / cover no-repeat;
+}
+.btn-crown__descr{
+	font-family: 'Forum';
+	text-align: center;
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+.btn-crown-contact .btn-crown__descr {
+    color: #fff;
 }
 
-.custom-btn svg:first-child {
-    bottom: calc(100% - -6px);
+.btn-crown-contact .btn-crown__decor::after {
+    border-color: #000;
 }
 
-.custom-btn svg:last-child {
-    top: calc(100% - -3px);
-}
+
 
 
 .transparent-btn{
@@ -179,6 +241,7 @@ button,a{
 		background: #0C0B10;
 	}
 }
+// ////button-components
 // 
 // .scale-img{
 //     width: 100%;
@@ -215,7 +278,7 @@ button,a{
         width: 86px;
         height: 162px;
         transform: translate(-50%, -50%);
-        background: url(./images/rated-img/title-bg-decor.svg) center no-repeat;
+        background: url(../images/rated-img/title-bg-decor.svg) center no-repeat;
         background-size: contain;
         pointer-events: none;
         z-index: -1;
@@ -259,7 +322,7 @@ button,a{
 }
 .custom-slider-btn{
 	position: absolute;
-    right: -5%;
+    right: 100px;
     top: 44%;
     cursor: pointer;
     background-color: #79655e;

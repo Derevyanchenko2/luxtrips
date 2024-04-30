@@ -9,7 +9,7 @@
         left: 0;
         height: auto;
         padding-bottom: 68%;
-        background-image: url('.,/images/sect-book-img/bg.jpg');
+        background-image: url('../images/sect-book-img/bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         pointer-events: none;
@@ -50,6 +50,7 @@
 }
 
 .book-column__text {
+    z-index: 1001;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -65,35 +66,53 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.book-column__visual{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 141px;
-    height: 141px;
-    transform: translate(-50%, -50%) scaleY(.3);
-    pointer-events: none;
-    z-index: -1;
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 141px;
-        height: 141px;
-        border: 1px solid #79655e;
-        transform: rotate(45deg) skew(20deg, 20deg);
-    }
-    &:after{
-        content: "";
-        position: absolute;
-        top: 8px;
-        left: 8px;
-        width: 127px;
-        height: 127px;
-        transform: rotate(45deg) skew(20deg, 20deg);
-        backdrop-filter: blur(20px);
-    }
+// .book-column__visual{
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     width: 141px;
+//     height: 141px;
+//     transform: translate(-50%, -50%) scaleY(.3);
+//     pointer-events: none;
+//     z-index: -1;
+//     &:before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 141px;
+//         height: 141px;
+//         border: 1px solid #79655e;
+//         transform: rotate(45deg) skew(20deg, 20deg);
+//     }
+//     &:after{
+//         content: "";
+//         position: absolute;
+//         top: 8px;
+//         left: 8px;
+//         width: 127px;
+//         height: 127px;
+//         transform: rotate(45deg) skew(20deg, 20deg);
+//         backdrop-filter: blur(20px);
+//     }
+// }
+
+
+.bookings-column__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.book-column__text {
+    text-align: center;
+}
 
+.book-column__content {
+    display: flex;
+    align-items: center;
+}
+
+.bookings-column__image img {
+    max-width: 100%;
+}
