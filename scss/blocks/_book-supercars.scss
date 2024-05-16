@@ -1,0 +1,228 @@
+.bookProducts {
+    padding-top: 30px;
+    margin-bottom: 59px;
+}
+
+.bookProducts-title {
+    text-align: center;
+}
+.bookProducts-wrapper {
+    margin-top: 50px;
+}
+.bookProducts-row{
+    display: flex;
+}
+.bookProducts-info {
+    max-width: 540px;
+    width: 100%;
+    margin-right: 30px;
+}
+.bookProducts-info__image {
+    margin-bottom: 32px;
+    border-radius: 10px;
+}
+.bookProducts-info__title {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.bookProducts-info__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 179.8%;
+}
+.bookProducts-services {
+    margin-top: 50px;
+}
+.book-products__service {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.book-products__service:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.bookProducts-form {
+    max-width: 545px;
+    width: 100%;
+    padding: 35px 45px;
+    margin: 0
+}
+
+.bookProducts-form__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.bookProducts-form__label {
+  padding-left: 30px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #79655e;
+}
+
+.bookProducts-form__input {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  padding: 15px 49px;
+  border: 1px solid #79655e;
+  border-radius: 30px;
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #000;
+}
+.icon-container{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+.form-input{
+  max-width: 210px;
+  width: 100%;
+}
+.form-dash {
+  position: relative;
+  width: 15px;
+  height: 100%;
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    color: #79655e;
+    border-bottom: 1px solid #79655e;
+  }
+}
+.bookProducts-form__date{
+  margin-top: 10px;
+}
+
+.form-date__input{
+  position: relative;
+}
+.form-date__input::before {
+  content: url('../images/bookProducts-img/calendar.svg'); 
+  position: absolute;
+  left: 5px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+}
+
+// calendar styling
+.ui-datepicker .ui-datepicker-header {
+  background-color: #e2d3ce;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  font-family: 'Forum';
+  font-weight: 400;
+  font-size: 20px;
+  color: #0C0B10;
+}
+
+.ui-datepicker .ui-state-default {
+  background-color: #fff;
+  color: #333;
+}
+
+.ui-datepicker .ui-state-active {
+  background-color: #e2d3ce;
+  border: none;
+  color: #ffff;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+}
+
+.ui-datepicker .ui-state-hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.modelSupercar-list{
+  margin-top: 15px;
+}
+.input-container {
+  position: relative;
+}
+
+// .bookProducts-form__modelSupercar-input {
+//   padding-right: 30px; 
+// }
+
+.bookProducts-form__modelSupercar-input::after {
+  content: url('../images/bookProducts-img/dropdown-icon.svg');
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+}
+
+.bookProducts-form__select{
+  position: relative;
+  margin-top: 15px;
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+  background: #e2d3ce;
+  height: auto;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  option{
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 10px;
+    border-bottom: 1px solid #FFFFFF;
+
+  }
+}
+
+.open {
+  display: block;
+}
+
+
+.bookProducts-form__modelSupercar-input {
+  padding-right: 30px;
+}
+
+.modelSupercar-list__icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.modelSupercar-list__icon img {
+  width: 15px;
+  height: 15px;
+}
+// time picker 
+.time-picker__dropdown {
+  display: block;
+}
+
+.time-picker__dropdown.active {
+  display: none;
+}

@@ -50,6 +50,8 @@
 }
 
 .book-column__text {
+    text-align: center;
+    pointer-events: none;
     z-index: 1001;
     position: absolute;
     top: 50%;
@@ -102,10 +104,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.book-column__text {
-    text-align: center;
 }
 
 .book-column__content {
